@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+@import url(https://fonts.bunny.net/css?family=arsenal:400,400i,700,700i|oswald:200,400,700);
+
+
+
+
+#bandeau {
+    background-color: rgba(179, 171, 171, 0.322);
+    margin: 1.5em;
+    padding: 1em;
+    border-radius: 5%;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    display: flex;
+    float: right;
+
+}
+
+.contact:hover {
+    font-size: 1.5em;
+}
+
+.dev__h2 {
+    font-size: 1.8em;
+}
+
+.competences {
+    display: flex;
+    float: left;
+    border: 1px solid green;
+    width: 28%;
+    height: 100vh;
+    margin: 10px
+}
+
+.competences__h2 {
+    text-align: center;
+    padding: 10px 0 0 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(33, 168, 33);
+}
+
+.competences__list {
+    font-size: 1.2em;
+    padding : 25px 0 0 10px;
+    list-style: square;
+    margin-left: 20px;
+}
+
+.experiences {
+    display: flex;
+    float: right;
+    border: 1px solid skyblue;
+    width: 68%;
+    height: 100vh;
+    margin: 10px;
+    margin-left: -20px;
+}
+
+.experience__h2 {
+    text-align: center;
+    padding: 10px 0 0 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(68, 186, 233);
+}
+
+
+@media (max-width : 600px) {
+    .dev {
+        font-size: 1.8em;
+    font-weight: normal;
+    }
+}
+
+@media (min-width: 950px)
+{
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media (min-width: 1300px)
+{
+    body {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+
+
