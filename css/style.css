@@ -17,7 +17,7 @@
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bold;
     display: flex;
     float: right;
@@ -29,12 +29,30 @@ h1 {
 }
 
 .dev__h2 {
-    font-size: 1.8em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+section {
+    m
+    display : flex;
+    flex-direction: row;
+}
+
+.photo {
+    float: left;
+    width: 10em;
+    height: 10em;
+    margin-right: 20px;
+}
+.infos {
+    font-size: 0.8em;
 }
 
 .competences {
-    display: flex;
-    float: left;
+
+    flex-basis: 50%;
     border: 1px solid green;
     width: 28%;
     height: 100vh;
@@ -44,22 +62,22 @@ h1 {
 .competences__h2 {
     text-align: center;
     padding: 10px 0 0 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     color: rgb(33, 168, 33);
 }
 
 .competences__list {
-    font-size: 1.2em;
+    font-size: 1em;
     padding : 25px 0 0 10px;
     list-style: square;
     margin-left: 20px;
 }
 
 .experiences {
-    display: flex;
-    float: right;
-    border: 1px solid skyblue;
+    
+    flex-basis: 50%;
+    border: 2px solid skyblue;
     width: 68%;
     height: 100vh;
     margin: 10px;
