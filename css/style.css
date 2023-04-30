@@ -1,23 +1,26 @@
 
 @font-face {
-    font-family: ;
-    src: url();
-}
-
-@import url(https://fonts.bunny.net/css?family=arsenal:400,400i,700,700i|oswald:200,400,700);
-
-
+    font-family: 'MaPolice';
+    src: url('../asset/Hypereality\ Sans\ Serif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 
-#bandeau {
-    background-color: rgba(145, 136, 136, 0.322);
+header {
+    background-color: rgba(117, 114, 114, 0.322);
     margin: 1.5em;
     padding: 1em;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
+body {
+    font-family: '';
+    background-color: rgba(116, 119, 117, 0.425);
+    border: solid 2px black;
+}
 h1 {
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-weight: bold;
     display: flex;
     float: right;
@@ -29,7 +32,7 @@ h1 {
 }
 
 .dev__h2 {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -40,30 +43,46 @@ h1 {
 
 main {
     min-height: 500px;
-    width: 90%;
-    background-color: rgba(236, 197, 148, 0.438);
-    margin: 0 auto;
+    width: 97%;
+    background-color: rgba(117, 114, 114, 0.322);
+    margin: 10px;
     box-shadow: 0 0 0 black;
     margin-top: 80px;    
+}
+
+section {
+    padding-left: 8px;
+}
+
+footer {
+    margin-top: -10px;
+    width: 100%;    
+}
+
+.footer {
+    width: 95%;
+    height: 50px;
+    background-color: rgb(216, 162, 92);
 }
 
 .photo {
     float: left;
     width: 10em;
     height: 10em;
-    margin-right: 40px;
+    margin-right: 15px;
 }
 .infos {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .competences {
-    float: left;
-    border: 1px solid green;
+    background-color: rgb(204, 204, 200);    
+    border: 2px solid green;
     margin-top: 40px;
-    width: 33%;
+    width: 30%;
     list-style: none;
     height:80vh ;
+    border-radius: 5px;
     
 }
 
@@ -72,24 +91,24 @@ main {
     padding: 10px 0 0 10px;
     font-size: 1.2em;
     font-weight: bold;
-    color: rgb(33, 168, 33);
+    color: rgb(28, 131, 28);
     }
 
 .competences__list {
-    font-size: 1em;
-    padding-top: 100px;    
+    font-size: 1.2em;
+    padding-top: 50px;    
     margin-left: 10px;
     list-style: none;
     line-height: 25px;    
 }
 
 .experiences {
-    
-    float: right;
+    background-color: rgb(204, 204, 200);    
     border: 2px solid skyblue;
-    width: 60%;
-    height: 90vh;
+    width: 65%;
+    height: 85vh;
     margin: 10px;
+    border-radius: 5px;
     
 }
 
@@ -108,6 +127,40 @@ main {
     line-height: 15px;    
 }
 
+.experience__list__date {
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.experience__list__title {
+    font-size: 1.4em;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.experience__list__city {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.experience__list__post {
+    line-height: 25px;
+    text-decoration: underline;
+}
+
+.experience__list__description {
+    font-size: 0.8em;
+}
+
+.footer {
+    width: 90%;
+    height: 50px;
+    background-color: rgba(145, 136, 136, 0.322);
+    margin: 1.5em;
+    padding: 1em;
+}
+
 @media (max-width : 600px) {
     .dev {
         font-size: 1em;
@@ -123,6 +176,12 @@ main {
         width: 5em;
         height: 5em;
         margin-right: 15px;
+    }
+    .competences__h2 {
+        font-size: 0.8em;
+    }
+    .experience__h2 {
+        font-size: 0.8em;
     }
 }
 
