@@ -10,7 +10,7 @@
 
 
 #bandeau {
-    background-color: rgba(179, 171, 171, 0.322);
+    background-color: rgba(145, 136, 136, 0.322);
     margin: 1.5em;
     padding: 1em;
     border-radius: 5%;
@@ -33,30 +33,38 @@ h1 {
     font-weight: bold;
 }
 
+.main {
+    display: flex;  
+    justify-content: space-around;  
+}
 
-section {
-    m
-    display : flex;
-    flex-direction: row;
+main {
+    min-height: 500px;
+    width: 90%;
+    background-color: rgba(236, 197, 148, 0.438);
+    margin: 0 auto;
+    box-shadow: 0 0 0 black;
+    margin-top: 80px;    
 }
 
 .photo {
     float: left;
     width: 10em;
     height: 10em;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .infos {
     font-size: 0.8em;
 }
 
 .competences {
-
-    flex-basis: 50%;
+    float: left;
     border: 1px solid green;
-    width: 28%;
-    height: 100vh;
-    margin: 10px
+    margin-top: 40px;
+    width: 33%;
+    list-style: none;
+    height:80vh ;
+    
 }
 
 .competences__h2 {
@@ -65,23 +73,24 @@ section {
     font-size: 1.2em;
     font-weight: bold;
     color: rgb(33, 168, 33);
-}
+    }
 
 .competences__list {
     font-size: 1em;
-    padding : 25px 0 0 10px;
-    list-style: square;
-    margin-left: 20px;
+    padding-top: 100px;    
+    margin-left: 10px;
+    list-style: none;
+    line-height: 25px;    
 }
 
 .experiences {
     
-    flex-basis: 50%;
+    float: right;
     border: 2px solid skyblue;
-    width: 68%;
-    height: 100vh;
+    width: 60%;
+    height: 90vh;
     margin: 10px;
-    margin-left: -20px;
+    
 }
 
 .experience__h2 {
@@ -92,11 +101,28 @@ section {
     color: rgb(68, 186, 233);
 }
 
+.experience__list {
+    padding-top: 20px;    
+    margin-left: 10px;
+    list-style: none;
+    line-height: 15px;    
+}
 
 @media (max-width : 600px) {
     .dev {
-        font-size: 1.8em;
+        font-size: 1em;
     font-weight: normal;
+    }
+    .dev__h2 {
+        font-size: 0.8em;
+    }
+    .infos {
+        font-size: 0.4em;
+    }
+    .photo {
+        width: 5em;
+        height: 5em;
+        margin-right: 15px;
     }
 }
 
