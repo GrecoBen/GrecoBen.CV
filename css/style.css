@@ -31,8 +31,14 @@ h1 {
     position: relative;
 }
 
+.contact {
+    display: inline-block;
+    font-style: italic;
+}
+
 .contact:hover {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    transition: 0.8s;
 }
 
 .dev__h2 {
@@ -71,14 +77,16 @@ footer {
 }
 
 .photo {
+    position: relative;
     float: left;
     width: 10em;
     height: 10em;
     margin-right: 15px;
     border-radius: 5px;
+    z-index: 1;
 }
 
-.infos {
+.infos {    
     font-size: 0.9em;
 }
 
@@ -168,9 +176,18 @@ footer {
     padding: 1em;
 }
 
-button :hover {
-    size-adjust: 20px;
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+    z-index: 0;
 }
+
+.dark-mode-div {
+    background-color: #333;
+    color: #fff;
+    z-index: 0;
+  }
+
 
 button {
     position: absolute;
@@ -178,11 +195,22 @@ button {
     right: 0;
     width: 20px;
     height: 20px;
-    border: 0;
     border-radius: 3px;
     background-color: black;
-    padding: 0.5rem;    
+    padding: 0.5rem;
 }
+
+.button:hover {
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-delay {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 
 @media (max-width : 600px) {
     .dev {
