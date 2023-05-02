@@ -8,7 +8,7 @@
 
 header {
     background-color: rgba(117, 114, 114, 0.322);
-    margin    
+    padding: 50px;
     border-radius: 10px;
 }
 
@@ -16,6 +16,7 @@ body {
     font-family: '';
     background-color: rgba(116, 119, 117, 0.425);
     border: solid 2px black;
+    margin: 20px;
 }
 
 h1 {
@@ -188,15 +189,19 @@ footer {
   }
 
 
-button {
+button {    
     position: absolute;
     bottom: 0;
     right: 0;
     width: 20px;
     height: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: black;
     padding: 0.5rem;
+    background-image: url('/images/moon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .button:hover {
