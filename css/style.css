@@ -8,6 +8,7 @@
 
 header {
     background-color: rgba(117, 114, 114, 0.322);
+    box-shadow: 0 0 15px black;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
@@ -51,15 +52,14 @@ h1 {
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;    
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
     min-height: 500px;
-    width: 97%;
+   
     background-color: rgba(117, 114, 114, 0.322);
     margin: 10px;
-    box-shadow: 0 0 0 black;
+    box-shadow: 0 0 15px black;
     margin-top: 80px;
     border-radius: 10px;
 }
@@ -72,7 +72,16 @@ section {
 footer {
     margin-top: -10px;
     width: 100%;
+    visibility: hidden
     ;
+}
+
+.main__left {
+    width: 40%;
+}
+
+.main__right {
+    width: 60%;
 }
 
 .footer {
@@ -88,7 +97,7 @@ footer {
     width: 10em;
     height: 10em;
     margin-right: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     z-index: 1;
 }
 
@@ -96,17 +105,44 @@ footer {
     font-size: 0.9em;
 }
 
-.competences {
-    display: flex
+.coordonnees {
     background-color: rgb(204, 204, 200);
-    border: 2px solid green;
-    margin-top: 40px;
-    width: 90%;
+    border: 2px solid rgb(3, 96, 172);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 80%;
     list-style: none;
-    height: 30vh;
+    height: 25vh;
     border-radius: 10px;
-    float: left;
+       
+}
 
+.coordonnees__h2 {
+    text-align: center;
+    padding: 10px 0 0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(3, 96, 172);
+}
+
+.coordonnees__list {
+    font-size: .9em;
+    padding-top: 5px;
+    margin-left: 10px;
+    list-style: none;
+    line-height: 18px;
+}
+
+.competences {
+    background-color: rgb(204, 204, 200);
+    border: 2px solid rgb(3, 96, 172);;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 70%;
+    list-style: none;
+    height: 25vh;
+    border-radius: 10px;
+       
 }
 
 .competences__h2 {
@@ -114,12 +150,12 @@ footer {
     padding: 10px 0 0 10px;
     font-size: 1.2em;
     font-weight: bold;
-    color: rgb(28, 131, 28);
+    color: rgb(3, 96, 172);;
 }
 
 .competences__list {
-    font-size: 1em;
-    padding-top: 30px;
+    font-size: .9em;
+    padding-top: 5px;
     margin-left: 10px;
     list-style: none;
     line-height: 18px;
@@ -127,8 +163,7 @@ footer {
 
 .experiences {
     background-color: rgb(204, 204, 200);
-    border: 2px solid rgb(26, 180, 241);
-    width: 90%;
+    border: 2px solid rgb(3, 96, 172);;    
     height: 85vh;
     margin: 10px;
     border-radius: 10px;
@@ -139,9 +174,9 @@ footer {
 .experience__h2 {
     text-align: center;
     padding: 10px 0 0 10px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
-    color: rgb(26, 180, 241);
+    color: rgb(3, 96, 172);;
 }
 
 .experience__list {
@@ -152,24 +187,25 @@ footer {
 }
 
 .experience__list__date {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
     font-style: italic;
 }
 
 .experience__list__title {
-    font-size: 1.2em;
-    line-height: 25px;
+    font-size: 1.1em;
+    line-height: 15px;
     font-weight: bold;
 }
 
 .experience__list__city {
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 0.2em;
 }
 
 .experience__list__post {
-    line-height: 25px;
+    font-size: 0.9em;
+    line-height: 20px;
     text-decoration: underline;
 }
 
@@ -206,11 +242,7 @@ button {
     height: 20px;
     border-radius: 5px;
     background-color: black;
-    padding: 0.5rem;
-    background-image: url('/images/moon.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    padding: 0.5rem;    
 }
 
 .button:hover {
@@ -245,11 +277,11 @@ button {
         margin-right: 15px;
     }
 
-    .competences__h2 {
+    .competences__h2, .coordonnees__h2 {
         font-size: 0.5em;
     }
 
-    .competences__list {
+    .competences__list, .coordonnees__list {
         font-size: 0.6em;
         line-height: 10px;
     }
@@ -269,13 +301,11 @@ button {
 
     .experience__list__title {
         font-size: 0.8em;
-    }
-
-    
+    }    
 
     button {
-        width: 5px;
-        height: 5px;
+        width: 2px;
+        height: 2px;
     }
 
 }
